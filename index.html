@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-png">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.png" alt="">
+            <h3>Weather App</h3>
+        </div>
+    </header>
+    <form id="myForm">
+        <input id="city-input" type="text" placeholder="Enter City Name">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="weather-display" class="weather-display">
+        <h2 id="city-name" class="city-name"></h2>
+        <div class="unit-container">
+            <img src="./images/temperature.png" alt="">
+            <div>
+                <h3 class="value"><span id="temp">21</span> °C</h3>
+                <h4 class="value-name">Feels Like <span id="feels-like"></span> °C</h4>
+            </div>
+        </div>
+        <div class="unit-container">
+            <img src="./images/humidity.png" alt="">
+            <div>
+                <h3 class="value"><span id="humidity">67</span> %</h3>
+                <h4 class="value-name">Humidity</h4>
+            </div>
+        </div>
+        <div class="unit-container">
+            <img src="./images/wind.png" alt="">
+            <div>
+                <h3 class="value"><span id="wind-speed">3.29</span> m/s</h3>
+                <h4 class="value-name">Wind Speed</h4>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
