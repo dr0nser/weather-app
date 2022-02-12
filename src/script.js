@@ -23,6 +23,7 @@ async function getWeatherData(city) {
         setDisplay(res);
     })
     .catch(function(error) {
+        display.style.display = "none";
         alert('Location Not Found!');
     })
 }
